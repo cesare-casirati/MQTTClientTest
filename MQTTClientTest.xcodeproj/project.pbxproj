@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		047AAA83297EDBAF00023C17 /* MQTTClientTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047AAA81297EDBAF00023C17 /* MQTTClientTest.xcdatamodeld */; };
 		047AAA85297EDBB300023C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047AAA84297EDBB300023C17 /* Assets.xcassets */; };
 		047AAA88297EDBB300023C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047AAA86297EDBB300023C17 /* LaunchScreen.storyboard */; };
+		7D74E7213C1692009DEB6AE3 /* Pods_MQTTClientTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E1C977D6AF4F5E66C8BF80 /* Pods_MQTTClientTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		047AAA84297EDBB300023C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047AAA87297EDBB300023C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047AAA89297EDBB300023C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EE7D044CC41FA840CF3FB7 /* Pods-MQTTClientTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClientTest.debug.xcconfig"; path = "Target Support Files/Pods-MQTTClientTest/Pods-MQTTClientTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA80300B4561F831DE367AE /* Pods-MQTTClientTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClientTest.release.xcconfig"; path = "Target Support Files/Pods-MQTTClientTest/Pods-MQTTClientTest.release.xcconfig"; sourceTree = "<group>"; };
+		D5E1C977D6AF4F5E66C8BF80 /* Pods_MQTTClientTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTClientTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D74E7213C1692009DEB6AE3 /* Pods_MQTTClientTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				047AAA77297EDBAF00023C17 /* MQTTClientTest */,
 				047AAA76297EDBAF00023C17 /* Products */,
+				897E68DA3DA6952A2656388A /* Pods */,
+				E3DF89C377A42E9EF85EF900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = MQTTClientTest;
 			sourceTree = "<group>";
 		};
+		897E68DA3DA6952A2656388A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69EE7D044CC41FA840CF3FB7 /* Pods-MQTTClientTest.debug.xcconfig */,
+				9AA80300B4561F831DE367AE /* Pods-MQTTClientTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3DF89C377A42E9EF85EF900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5E1C977D6AF4F5E66C8BF80 /* Pods_MQTTClientTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047AAA8C297EDBB300023C17 /* Build configuration list for PBXNativeTarget "MQTTClientTest" */;
 			buildPhases = (
+				3A2FBF8485017937FF052F5B /* [CP] Check Pods Manifest.lock */,
 				047AAA71297EDBAF00023C17 /* Sources */,
 				047AAA72297EDBAF00023C17 /* Frameworks */,
 				047AAA73297EDBAF00023C17 /* Resources */,
+				F1F98F58D2793FEC0A856D21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,7 +132,7 @@
 				};
 			};
 			buildConfigurationList = 047AAA70297EDBAF00023C17 /* Build configuration list for PBXProject "MQTTClientTest" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A2FBF8485017937FF052F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MQTTClientTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F98F58D2793FEC0A856D21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MQTTClientTest/Pods-MQTTClientTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MQTTClientTest/Pods-MQTTClientTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MQTTClientTest/Pods-MQTTClientTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		047AAA71297EDBAF00023C17 /* Sources */ = {
@@ -286,6 +354,7 @@
 		};
 		047AAA8D297EDBB300023C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EE7D044CC41FA840CF3FB7 /* Pods-MQTTClientTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +383,7 @@
 		};
 		047AAA8E297EDBB300023C17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA80300B4561F831DE367AE /* Pods-MQTTClientTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

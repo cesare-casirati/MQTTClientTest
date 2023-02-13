@@ -1,0 +1,9 @@
+
+/* Class = "UITextView"; text = "Inserisci il testo.."; ObjectID = "fed-le-A0y"; */
+"fed-le-A0y.text" = "Inserisci il testo..";
+
+/* Class = "UIButton"; configuration.title = "INVIO"; ObjectID = "gu3-Ot-Im3"; */
+"gu3-Ot-Im3.configuration.title" = "INVIO";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gu3-Ot-Im3"; */
+"gu3-Ot-Im3.normalTitle" = "Button";
